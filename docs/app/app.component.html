@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+    <span>Covid-19 Tracker</span>
+    <!-- This fills the remaining space of the current row -->
+    <span class="example-fill-remaining-space"></span>
+    <span [style] = "{'margin-top':'5px'}">
+      <img src="assets/data/logo.png"></span>
+  </mat-toolbar>
+
+<p-panel header="Total Cases Worldwide: {{totalData?.cases}}" [toggleable]="true" styleClass="mypanel" [style]="{'margin-bottom':'20px'}" >
+    <p-gmap #gmap [options]="options" [overlays]="overlays" [style]="{'width':'100%','height':'650px'}" (onMapReady)="setMap($event)" ></p-gmap>
+</p-panel>
+
