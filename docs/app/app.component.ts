@@ -122,7 +122,7 @@ export class AppComponent implements OnInit {
 
             const infowindow_small = new google.maps.InfoWindow({
                 content: `<b>${obj.country}</b></br>
-                        <b>cases :${obj.cases}</b>`,
+                        <b>Cases :${obj.cases}</b>`,
             });
             const infowindow_large = new google.maps.InfoWindow({
                 content: `<b>${obj.country}</b></br>
