@@ -19,7 +19,7 @@ declare var google: any;
 export class AppComponent implements OnInit {
     options: any;
     markers: Observable<any>;
-    countryUrl = 'https://corona.lmao.ninja/countries?sort=country';
+    countryUrl = 'https://corona.lmao.ninja/v2/countries?sort=country';
     totaldataUrl = 'https://corona.lmao.ninja/all';
     Provinceurl_header = 'https://api.covid19api.com/country/';
     Provinceurl_footer = '/status/confirmed/live';
